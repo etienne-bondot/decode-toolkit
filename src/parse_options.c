@@ -5,7 +5,7 @@
 ** Login   <bondot_e@epitech.net>
 ** 
 ** Started on  Wed Jun  5 10:57:55 2013 etienne bondot
-** Last update Wed Jun  5 13:05:56 2013 etienne bondot
+** Last update Wed Jun  5 16:13:13 2013 etienne bondot
 */
 
 #define _POSIX_C_SOURCE	200809L
@@ -14,9 +14,9 @@
 void		get_opt_param(char **av, t_args *args)
 {
   if (!strcmp(av[2], "--encode") && strlen(av[2]) == strlen("--encode"))
-    args->opt = ENCRYPT;
+    args->opt = ENCODE;
   else if (!strcmp(av[2], "--decode") && strlen(av[2]) == strlen("--decode"))
-    args->opt = DECRYPT;
+    args->opt = DECODE;
   else
     print_err("Err: invalid command.\n");  
 }

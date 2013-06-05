@@ -5,7 +5,7 @@
 ** Login   <bondot_e@epitech.net>
 ** 
 ** Started on  Wed Jun  5 11:04:42 2013 etienne bondot
-** Last update Wed Jun  5 12:46:19 2013 etienne bondot
+** Last update Wed Jun  5 16:19:45 2013 etienne bondot
 */
 
 #include <stdlib.h>
@@ -16,8 +16,10 @@
 #ifndef _DECODE_H_
 # define _DECODE_H_
 
-# define ENCRYPT	0
-# define DECRYPT	1
+# include "codes.h"
+
+# define ENCODE	0
+# define DECODE	1
 
 typedef struct s_option	t_option;
 typedef struct s_args	t_args;
@@ -35,17 +37,11 @@ struct	s_args
 };
 
 extern t_option	option[];
+extern char	*vigenere_table[];
 
 /*
 ** main.c
 */
-
-/*
-** cesar.c
-*/
-void		cesar_decrypt(char *);
-void		cesar_decrypt(char *);
-void		cesar(int, char *);
 
 /*
 ** parse_options.c

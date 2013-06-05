@@ -5,6 +5,7 @@ NAME	= decode-tools
 
 SRC	= src/main.c		\
 	  src/cesar.c		\
+	  src/vigenere.c	\
 	  src/error.c		\
 	  src/globales.c	\
 	  src/parse_options.c	\

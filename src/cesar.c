@@ -5,12 +5,12 @@
 ** Login   <bondot_e@epitech.net>
 ** 
 ** Started on  Wed Jun  5 11:53:57 2013 etienne bondot
-** Last update Wed Jun  5 12:44:22 2013 etienne bondot
+** Last update Wed Jun  5 16:12:23 2013 etienne bondot
 */
 
 #include "decode.h"
 
-void		cesar_encrypt(char *str)
+void		cesar_encode(char *str)
 {
   int		i;
   int		decalage;
@@ -24,10 +24,10 @@ void		cesar_encrypt(char *str)
 	  str[i] = (str[i] + decalage - 'a') + 'a';
       i++;
     }
-  printf("Encrypt string : %s\n", str);
+  printf("Encode string : %s\n", str);
 }
 
-void		cesar_decrypt(char *str)
+void		cesar_decode(char *str)
 {
   int		i;
   int		j;
@@ -45,23 +45,23 @@ void		cesar_decrypt(char *str)
 	    str[j]++;
 	  j++;
 	}
-      printf("decryption %d:\n%s\n\n", i, str);
+      printf("Decode %d:\n%s\n\n", i, str);
       i++;
     }
 }
 
 void		cesar(int opt, char *str)
 {
-  if (opt == ENCRYPT)
+  if (opt == ENCODE)
     {
       printf("Encryption... please wait...\n");
-      cesar_encrypt(str);
+      cesar_encode(str);
       printf("Encryption done.\n");
     }
-  else if (opt == DECRYPT)
+  else if (opt == DECODE)
     {
       printf("Decryption... please wait...\n");
-      cesar_decrypt(str);
+      cesar_decode(str);
       printf("Decryption done.\n");
     }
   else
