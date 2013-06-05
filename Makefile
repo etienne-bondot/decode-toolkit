@@ -1,7 +1,7 @@
 
 DEBUG	= yes
 
-NAME	= decode
+NAME	= decode-tools
 
 SRC	= src/main.c		\
 	  src/cesar.c		\
