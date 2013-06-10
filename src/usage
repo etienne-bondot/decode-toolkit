@@ -1,0 +1,6 @@
+==========================================
+DECODE-TOOLS, a simple encode-decode tools
+==========================================
+
+Usage : [CESAR] encode and decode	-- ./decode-tools [-c [--encode] [--decode] [string]]
+      	[VIGENERE] encode and decode 	-- ./decode-tools [-v [--encode] [--decode] [string]]

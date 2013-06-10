@@ -5,7 +5,7 @@
 ** Login   <bondot_e@epitech.net>
 ** 
 ** Started on  Wed Jun  5 10:57:55 2013 etienne bondot
-** Last update Wed Jun  5 16:13:13 2013 etienne bondot
+** Last update Mon Jun 10 10:48:22 2013 etienne bondot
 */
 
 #define _POSIX_C_SOURCE	200809L
@@ -38,7 +38,7 @@ int		parse_options(int ac, char **av, t_args *args)
   found = 0;
   if (ac != 4)
     {
-      ac < 4 ? 
+      ac < 4 ?
 	print_err("Err: too few arguments.\n") : 
 	print_err("Err: too many arguments.\n");
     }

@@ -5,13 +5,16 @@
 ** Login   <bondot_e@epitech.net>
 ** 
 ** Started on  Wed Jun  5 11:04:42 2013 etienne bondot
-** Last update Wed Jun  5 16:19:45 2013 etienne bondot
+** Last update Mon Jun 10 10:43:11 2013 etienne bondot
 */
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #ifndef _DECODE_H_
 # define _DECODE_H_
