@@ -1,12 +1,14 @@
 /*
 ** decode.h for decode in /home/bondot_e/rendu/projets_perso/decode_toolkit
-** 
+**
 ** Made by etienne bondot
 ** Login   <bondot_e@epitech.net>
-** 
+**
 ** Started on  Wed Jun  5 11:04:42 2013 etienne bondot
-** Last update Mon Jun 10 10:43:11 2013 etienne bondot
+** Last update Sun Jun 30 12:13:02 2013 bondot_e
 */
+
+#define	_POSIX_C_SOURCE	200809L
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -50,7 +52,7 @@ extern char	*vigenere_table[];
 ** parse_options.c
 */
 void		get_opt_param(char **, t_args *);
-void		get_str_param(char **, t_args *);	
+void		get_str_param(char **, t_args *);
 int		parse_options(int, char **, t_args *);
 
 /*
@@ -62,5 +64,14 @@ void		usage();
 /*
 ** utils_1.c
 */
+int		is_in_str(char, char *);
+void		free_tabchar(char **);
+
+/*
+** str_to_wordtab.c
+*/
+char		**str_to_wordtab(char *);
+int		cut_words(char *);
+void		print_wordtab(char **);
 
 #endif /* !_DECODE_H_ */
